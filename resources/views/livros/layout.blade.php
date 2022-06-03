@@ -7,6 +7,7 @@
 <body>
 
 <div class="container">
+    @include('message')
     @yield('content')
 </div>
 

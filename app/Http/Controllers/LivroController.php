@@ -26,7 +26,7 @@ class LivroController extends Controller
 
         Livro::create($dados);
 
-        return redirect('livro')->with('flash_message', 'Livro adicionado com sucesso!');
+        return redirect('livro')->with('success', 'Livro adicionado com sucesso!');
     }
 
     public function show($id)
@@ -51,13 +51,13 @@ class LivroController extends Controller
 
         $livro->update($dados);
 
-        return redirect('livro')->with('flash_message', 'livro salvo com sucesso!');
+        return redirect('livro')->with('success', 'livro salvo com sucesso!');
     }
 
     public function destroy($id)
     {
         Livro::destroy($id);
 
-        return redirect('livro')->with('flash_message', 'livro apagado com sucesso!');
+        return redirect('livro')->with('success', 'livro apagado com sucesso!');
     }
 }
