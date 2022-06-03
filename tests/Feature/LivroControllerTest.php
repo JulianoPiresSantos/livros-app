@@ -15,6 +15,6 @@ class LivroControllerTest extends TestCase
      */
     public function test_index()
     {
-        $this->client->request('GET', 'livro');
+        $this->call('GET', 'livro');
     }
 }
